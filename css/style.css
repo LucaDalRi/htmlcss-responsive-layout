@@ -1,0 +1,196 @@
+/* reset */
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.debug{
+    border: 2px dashed fuchsia;
+}
+/* Classi Comuni */
+.disp-flex{
+    display: flex;
+}
+.just-cont-SB{
+    justify-content: space-between;
+}
+.color{
+    background-color: #9185e5;
+}
+
+/* Header */
+header{
+    background-color: #0084fd;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    justify-content: space-between;
+    width: 70%;
+}
+
+.logo{
+    background-image: url('../img/logo.png');
+    background-repeat: no-repeat;
+    width: 10%; 
+}
+
+a{
+    text-decoration: none;
+}
+
+.li-nav li{
+    display: inline;
+}
+
+.li-nav ul{
+    list-style-type: none;
+    padding: 0;
+}
+/* Fine Header */
+
+/* 1a Section */
+.container-section1{
+    min-height: 500px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.cards{
+    display: flex;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+}
+.card{
+    width: calc(100% / 3);
+}
+.cards .card:first-child{
+    width: calc((100% / 3) * 2);
+    display: flex;
+}
+
+.cards > .card:first-child > *{
+    width: 50%;
+}
+/* section 2 */
+
+.container-section2{
+    width: 50%;
+    min-height: 500px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-end;
+}
+
+.container-planning{
+    width: 50%;
+    color: white;
+}
+
+.container-developement{
+    width: 50%;
+    border-radius: 40px;
+    text-align: center; 
+    background-color: white;
+}
+.img-planning{
+    width: 100%;
+}
+.img-planning2{
+    width: 80%;
+}
+.fa-arrow-down{
+    background-color: #9792e4;
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 50%;
+}
+/* section 3 */
+
+.container-section3{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.partner-cards{
+    min-height: 300px;
+}
+
+.partner-card{
+    min-height: 100px;
+    display: flex;
+}
+
+.partner-img{
+    width: 20%;
+}
+
+.partner-text{
+    width: 80%;
+}
+
+/* section 4 */
+
+.benefit-container{
+    width: 70%;
+    min-height: 300px;
+    margin: 0 auto;
+}
+
+.benefit-title{
+    width: 30%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.benefit-cards{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+}
+
+.benefit-card{
+    width: 30%;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+/* section 5 */
+
+.container-about-us{
+    display: flex;
+    width: 65%;
+    margin: 0 auto;
+}
+
+.about-us-text{
+    width: 80%;
+}
+
+.about-us-img{
+    width: 20%;
+}
+.about-us-img img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+/* section 6 */
+
+.container-get-started{
+    width: 40%;
+    margin: 0 auto;
+    min-height: 200px;
+    text-align: center;
+}
+
+/* footer */
+
+.container-footer{
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+}
