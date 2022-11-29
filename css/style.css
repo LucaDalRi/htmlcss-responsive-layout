@@ -28,28 +28,6 @@ body{
     margin: 50px 0;
 }
 
-
-/* Header */
-header{
-    background-color: #0084fd;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 0;
-}
-
-.container{
-    justify-content: space-between;
-    width: 70%;
-}
-
-.logo{
-    background-image: url('../img/logo.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 10%; 
-
-}
-
 a{
     text-decoration: none;
     background-color: #0084fd;
@@ -58,18 +36,41 @@ a{
     color: white;
 }
 
+/* Header */
+header{
+    background-color: #0084fd;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.container{
+    justify-content: space-between;
+    width: 70%;
+    align-items: center; 
+}
+
+.logo{
+    width: 20%;
+}
+
 .li-nav li{
     display: inline;
 }
 
-.li-nav ul{
-    list-style-type: none;
-    padding: 0;
+.li-nav a{
+    padding: 5px;
+}
+
+.hidden-menu{
+    color: white;
+    display: none; 
 }
 
 #get-started{
     background-color: white;
     color: black;
+    padding: 10px 20px;
+    border-radius: 25px;
 }
 /* Fine Header */
 
@@ -145,13 +146,11 @@ a{
     background-color: white;
     margin-bottom: 30px;
 }
-.img-planning{
-    width: 80%;
+.img-planning, .img-planning2{
+    width: 100%;
     margin-bottom: 30px;
 }
-.img-planning2{
-    width: 70%;
-}
+
 .fa-arrow-down{
     background-color: #9792e4;
     font-size: 30px;
@@ -324,4 +323,52 @@ footer{
 
 .container-footer p{
     margin: 30px 0;
+}
+
+
+
+
+/* media query */
+
+@media screen and (max-width: 768px) {
+    .li-nav a{
+        display: none;
+    }
+    .hidden-menu{
+        display: inline; 
+    }
+    .cards .card:first-child{
+        display: block;
+    }
+    .container-section2{
+        display: block;
+        padding-bottom: 40px;
+    }
+    .container-planning, .container-developement{
+        width: 100%;
+    }
+    .partner-text{
+        padding-top: 20px;
+    }
+    .benefit-container, .container, .container-section2, .container-section3, .container-about-us{
+        width: 90%;
+    }
+    .benefit-card{
+        width: 45%;
+    }
+    .about-us-text{
+        width: 70%;
+        padding-right: 20px;
+    }
+    .about-us-img{
+        width: 30%;
+    }
+    .container-get-started{
+        width: 80%;
+    }
+    .cards > .card:first-child > * {
+        width: 70%;
+        margin-top: 20px;
+    }
+
 }
