@@ -50,7 +50,7 @@ header{
 }
 
 .logo{
-    width: 20%;
+    width: 13%;
 }
 
 .li-nav li{
@@ -92,6 +92,7 @@ header{
     background-color: #b5ddff;
     padding-top: 30px;
     margin-bottom: 20px;
+    border-radius: 20px;
 
 }
 .cards .card:first-child{
@@ -107,7 +108,7 @@ header{
 .card-text1{
     padding-left: 20px;
     font-size: 18px;
-    line-height: 30px;
+    line-height: 25px;
 }
 
 .card p{
@@ -144,7 +145,7 @@ header{
     border-radius: 40px;
     text-align: center; 
     background-color: white;
-    margin-bottom: 30px;
+    margin: 30px 0;
 }
 .img-planning, .img-planning2{
     width: 100%;
@@ -183,7 +184,6 @@ header{
     width: 20%;
 }
 .partner-img img {
-    max-width: 80%;
     clip-path: circle();  
 }
 
@@ -201,7 +201,6 @@ header{
 
 .benefit-container{
     width: 70%;
-    min-height: 300px;
     margin: 0 auto;
     padding: 20px 0;
 }
@@ -371,4 +370,54 @@ footer{
         margin-top: 20px;
     }
 
+}
+
+@media screen and (max-width: 480px) {
+    .cards{
+        display: block;
+        text-align: center;
+    }
+    .card, .card-text1{
+        width: 100%;
+    }
+    .card-text1, #phone{
+        padding: 0;
+    }
+    
+    .cards > .card:first-child > * {
+        width: 100%;
+    }
+    .cards .card:first-child{
+        width: 100%;
+        
+    }
+    .partner-card{
+        display: block;
+        text-align: center;
+    }
+    .partner-text{
+        width: auto;
+        padding-bottom: 10px;
+    }
+    .partner-img{
+        width: 100%;
+        padding-top: 20px;
+    }
+    .benefit-card, .container-get-started, .container-footer {
+        width: 90%;
+    }
+    .container-about-us{
+        display: block;
+    }
+    .about-us-text{
+        width: auto;
+    }
+    .about-us-img {
+        width: 100%;
+    }
+    .about-us-img img{
+        height: 200px;
+        width: 200px;
+        
+    }
 }
