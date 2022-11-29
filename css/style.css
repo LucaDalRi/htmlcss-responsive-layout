@@ -4,9 +4,9 @@ body{
     padding: 0;
     box-sizing: border-box;
 }
-.debug{
+/* .debug{
     border: 2px dashed fuchsia;
-}
+} */
 /* Classi Comuni */
 .disp-flex{
     display: flex;
@@ -17,12 +17,24 @@ body{
 .color{
     background-color: #9185e5;
 }
+.txt-center{
+    text-align: center;
+}
+.marginb30{
+    margin-bottom: 30px;
+}
+
+.margintopbot50px{
+    margin: 50px 0;
+}
+
 
 /* Header */
 header{
     background-color: #0084fd;
     justify-content: center;
     align-items: center;
+    padding: 10px 0;
 }
 
 .container{
@@ -33,11 +45,17 @@ header{
 .logo{
     background-image: url('../img/logo.png');
     background-repeat: no-repeat;
+    background-position: center;
     width: 10%; 
+
 }
 
 a{
     text-decoration: none;
+    background-color: #0084fd;
+    padding: 10px 20px;
+    border-radius: 25px;
+    color: white;
 }
 
 .li-nav li{
@@ -47,6 +65,11 @@ a{
 .li-nav ul{
     list-style-type: none;
     padding: 0;
+}
+
+#get-started{
+    background-color: white;
+    color: black;
 }
 /* Fine Header */
 
@@ -59,20 +82,47 @@ a{
 
 .cards{
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     flex-wrap: wrap;
+    margin: 40px 0;
 }
 .card{
-    width: calc(100% / 3);
+    width: calc((100% / 3) - 20px);
+    background-color: #b5ddff;
+    padding-top: 30px;
+    margin-bottom: 20px;
+
 }
 .cards .card:first-child{
-    width: calc((100% / 3) * 2);
+    width: calc(((100% / 3) * 2) - 10px);
     display: flex;
+    
 }
 
 .cards > .card:first-child > *{
     width: 50%;
 }
+
+.card-text1{
+    padding-left: 20px;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.card p{
+    line-height: 25px;
+    vertical-align: middle;
+}
+
+#phone{
+    width: 60%;
+    padding-left: 50px;
+}
+
+.card h3, .card .fa-solid{
+    color: #0084fd;
+}
+
 /* section 2 */
 
 .container-section2{
@@ -93,18 +143,20 @@ a{
     border-radius: 40px;
     text-align: center; 
     background-color: white;
+    margin-bottom: 30px;
 }
 .img-planning{
-    width: 100%;
+    width: 80%;
+    margin-bottom: 30px;
 }
 .img-planning2{
-    width: 80%;
+    width: 70%;
 }
 .fa-arrow-down{
     background-color: #9792e4;
     font-size: 30px;
     padding: 10px;
-    border-radius: 50%;
+    clip-path: circle();
 }
 /* section 3 */
 
@@ -112,6 +164,7 @@ a{
     width: 70%;
     margin: 0 auto;
     text-align: center;
+    margin: 50px auto;
 }
 
 .partner-cards{
@@ -119,30 +172,47 @@ a{
 }
 
 .partner-card{
-    min-height: 100px;
     display: flex;
+    align-items: center;
+    text-align: left;
+    color: white;
+    background-color: #9792e4;
+    border-radius: 25px;
 }
 
 .partner-img{
     width: 20%;
 }
-
-.partner-text{
-    width: 80%;
+.partner-img img {
+    max-width: 80%;
+    clip-path: circle();  
 }
 
+.partner-text{
+    width: 75%;
+}
+.container-section3 h3{
+    color: #9792e4;
+    font-size: 30px;
+}
+.partner-card:first-child{
+    margin-top: 40px;
+}
 /* section 4 */
 
 .benefit-container{
     width: 70%;
     min-height: 300px;
     margin: 0 auto;
+    padding: 20px 0;
 }
 
+
 .benefit-title{
-    width: 30%;
     margin: 0 auto;
     text-align: center;
+    color: white;
+    font-size: 30px;
 }
 
 .benefit-cards{
@@ -156,6 +226,25 @@ a{
     width: 30%;
     margin-bottom: 20px;
     padding: 10px;
+    background-color: white;
+    border-radius: 25px;
+    padding-left: 20px;
+    line-height: 30px;
+}
+
+.benefit-card p{
+    color: #9792e4;
+}
+
+.benefit-card a{
+    background-color: #9792e4;
+    margin: 40px 0;
+}
+
+.benefit-card p:first-child{
+    font-size: 40px;
+    font-weight: bolder;
+    margin: 20px 0;
 }
 
 /* section 5 */
@@ -163,11 +252,17 @@ a{
 .container-about-us{
     display: flex;
     width: 65%;
-    margin: 0 auto;
+    margin: 50px auto;
 }
 
 .about-us-text{
     width: 80%;
+    line-height: 30px;
+}
+
+.about-us-text h3{
+    font-size: 50px;
+    color: #9792e4;
 }
 
 .about-us-img{
@@ -175,7 +270,12 @@ a{
 }
 .about-us-img img{
     width: 100%;
-    border-radius: 50%;
+    clip-path: circle();
+}
+
+.about-us-img p{
+    color: #9185e5;
+    font-size: 23px;
 }
 
 /* section 6 */
@@ -185,12 +285,43 @@ a{
     margin: 0 auto;
     min-height: 200px;
     text-align: center;
+    color: white;
+    padding: 20px 0;
+}
+
+
+.container-get-started h3{
+    font-size: 40px;
+}
+
+.container-get-started h2{
+    font-size: 50px;
+    color: orange;
+}
+
+.container-get-started a{
+    background-color: transparent;
 }
 
 /* footer */
+footer{
+    background-color: #333333;
+    padding: 20px 0;
+}
 
 .container-footer{
+    color: white;
     width: 40%;
     margin: 0 auto;
     text-align: center;
+    padding-bottom: 30px;
+}
+
+.container-footer a{
+    background-color: transparent;
+    
+}
+
+.container-footer p{
+    margin: 30px 0;
 }
